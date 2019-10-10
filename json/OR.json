@@ -1,0 +1,30 @@
+{
+
+    "url":"http://172.16.17.228/simulator/#/login",
+
+  "locators":{
+
+    "loginPage":{
+    
+      "username" : "//input[@placeholder='Username']",
+      "password" : "//input[@placeholder='Password']",
+      "signinBtn" : "//button[@class='btn btn-primary btn-block']",
+
+      "testdata":{
+        "un":"igt",
+        "pswd":"igt"
+     
+      }
+     
+      },
+
+      
+    "simulatorPage":{
+    
+      "dropDownBtn" : "//button[@id='dropdownMenu1']",
+      "screenTriggerIdel" : "//a[contains(text(),'screenTriggerIdle')]",
+      "loadContent_onPage_ID" : "data-test-loadContent1",
+      "loadContent_onPopups_ID" : "loadContentBtn"
+      }
+  }
+}

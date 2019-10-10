@@ -1,0 +1,18 @@
+{
+  "name": "m5test",
+  "version": "1.0.0",
+  "description": "Tech services test automation",
+  "main": "index.js",
+  "dependencies": {
+    "protractor": "5.4.2",
+    "jasmine": "^3.4.0"
+  },
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "c-tandelv",
+  "license": "ISC"
+
+
+}
