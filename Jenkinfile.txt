@@ -1,0 +1,10 @@
+node{
+    stage('wynn test'){
+        
+          git 'https://github.com/Virutandel/TableMountainTest'
+    }
+    
+    stage('Compile-Package'){
+      bat label: '', script: 'protractor conf.js'
+    }
+}
