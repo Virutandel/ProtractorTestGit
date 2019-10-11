@@ -1,10 +1,5 @@
-pipeline {
-stages {
-        stage ("Compile-Package"){
-		steps	{
-			protractor conf.js
-			}
-        			 }
-
-	}
+node{
+    stage('Compile-Package'){
+      bat label: '', script: 'protractor conf.js'
+    }
 }
