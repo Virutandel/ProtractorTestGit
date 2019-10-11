@@ -1,25 +1,10 @@
 pipeline {
-    // Limit this to run on only some machines
-    agent { label "D16StaticSlave72" }
-    
-    environment {
-         // Environment variable identifiers need to be both valid bash variable
-        // identifiers and valid Groovy variable identifiers. 
-        NEWEST_COMMIT = sh(script:"git rev-parse HEAD", returnStdout:true).trim() 
-        CONTENT_VERSION = sh(script:"sed -n 3p version.txt", returnStdout:true).trim()    
-        M5_VERSION = sh(script:"sed -n 5p version.txt", returnStdout:true).trim() 
-        GIT_REPO_NAME = ""
-        WORKSPACE = sh(script:"pwd", returnStdout:true).trim() 
-    }
-
 stages {
-
-
         stage ("Compile-Package"){
-		    steps{
-			    //clean workspace
-				protractor conf.js
+		steps	{
+			protractor conf.js
 			}
-        }
+        			 }
 
+	}
 }
