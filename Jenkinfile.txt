@@ -1,8 +1,4 @@
 node{
-    stage('wynn test'){
-        
-          git 'https://github.com/Virutandel/ProtractorTestGit'
-    }
     
     stage('Compile-Package'){
       protractor conf.js
