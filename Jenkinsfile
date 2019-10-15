@@ -4,9 +4,13 @@ pipeline {
 
 node{
     stage('Compile-Package'){
-      	sh """ 
-                # Run test
+    
+              bat label: '', script: 'protractor conf.js'
+    
+        //  	sh """ 
+      //          # Run test
                
-               protractor conf.js    }
+        //       protractor conf.js    }
         }
 }
+
