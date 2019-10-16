@@ -1,7 +1,6 @@
 node{
 	
 		stage('wynn test'){
-        	sh """ 
                 # Run test
 		sh """
                       
