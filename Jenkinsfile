@@ -1,7 +1,7 @@
 node{
 	
 		stage('wynn test'){
-                # Run test
+  
 		sh """
                       
 			webdriver-manager update
